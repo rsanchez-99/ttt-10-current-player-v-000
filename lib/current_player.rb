@@ -8,6 +8,9 @@ def turn_count(board)
   count
 end
 
-def current_player
+def current_player(board)
+  turn_count(board)
 
+  if turn_count(board) % 2 == 0
+    puts "It is O's turn."
 end
